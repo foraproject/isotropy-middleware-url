@@ -1,7 +1,7 @@
 {
   "author": "Jeswin Kumar <jeswinpk@agilehead.com>",
   "name": "isotropy-middleware-url",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parse a url and insert it into req.",
   "main": "dist/isotropy-middleware-url.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "url": "https://github.com/jeswin/isotropy-middleware-url.git"
   },
   "dependencies": {
-    "parseurl": "*"
+    "parseurl": "*",
+    "querystring": "*"
   },
   "devDependencies": {
     "supertest": "*",

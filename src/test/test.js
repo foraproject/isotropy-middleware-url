@@ -10,7 +10,7 @@ describe('Isotropy Parse Url', () => {
     await parse(req);
     req.href.should.equal('/status?name=ryan');
     req.search.should.equal('?name=ryan');
-    req.query.should.equal('name=ryan');
+    req.query.should.deepEqual({name:'ryan'});
     req.pathname.should.equal('/status');
   });
 });
