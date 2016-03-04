@@ -1,9 +1,9 @@
 /* @flow */
 import parseurl from "parseurl";
 import qs from "querystring";
-import type { IncomingMessage, ServerResponse } from "./flow/http-types";
+import type { ProcessedIncomingMessage, ServerResponse } from "isotropy-interfaces/node/http";
 
-export default async function(req: IncomingMessage, res: ServerResponse) : Promise {
+export default async function(req: ProcessedIncomingMessage, res: ServerResponse) : Promise {
   const parsed = parseurl(req);
   req.href = parsed.href;
   req.pathname = parsed.pathname;
